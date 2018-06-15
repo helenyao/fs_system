@@ -1,0 +1,115 @@
+.content-wrapper{
+    min-height: 700px !important;
+}
+td{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.twolevelMenu{
+    font-size: 14px;
+    text-indent: 15px;
+}
+.twolevelMenu i{
+    font-size: 12px !important;
+    position: relative;
+    left: 12px;
+}
+.row{
+    position: relative;
+}
+.pagination {
+    position: absolute;
+   top: 4px;
+   right: 6px;
+}
+.main-footer {
+   /* padding-top: 10px; */
+   /* position: absolute; */
+   /* bottom: 0; */
+   /* position: relative; */
+   padding-top: 1.5%;
+}
+.singOut{
+    position: relative;
+    top: 8px;
+    right: -10px;
+}
+.warning{
+    position: relative;
+    right: 20px;
+}
+#mod{
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+#mod input{
+    border: none;
+    background: none;
+    text-align: center;
+}
+.popMenu{
+    display: none;
+    position: fixed;
+    top: 100px;
+    margin-left: 50%;
+    height: 200px;
+    width: 500px;
+    left: -250px;
+    z-index: 99;
+    background: skyblue;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
+}
+.mask{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+}
+.del,.add{
+    cursor: pointer;
+}
+.table{
+    box-shadow: 0 6px 8px 1px #eee;
+}
+.table td, .table th {
+    padding-left: 0rem;
+    text-align: center;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active{
+    background: #01A3E0;
+}
+.elevation-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0), 0 6px 6px rgba(0,0,0,0);
+}
+.bg-primary, .label-primary {
+    background-color: #01A3E0!important;
+}
+::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #aaa;
+}
+.modal-body p{
+    overflow: hidden;
+}
+.modal-body span{
+    font-size: 14px;
+}
+#num,#term,#count,#schoolName,#schoolNum,#dormitoryName,#location,#expense,#name,#discount,#type,.model{
+    width: 70%;
+    color: #333;
+    font-size: 14px;
+    border: none;
+    text-indent: 20px;
+    border-bottom: 1px solid #aaa;
+    margin-left: 5%;
+    outline: none;
+}
+.change,.deletes{
+    cursor: pointer;
+}

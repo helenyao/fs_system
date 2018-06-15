@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            background: #eee;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .login_body{
+            height: 540px;
+            width: 888px;
+            background: url(img/smallbg.png) no-repeat 44px -105px,#fff;
+            position: absolute;
+            margin-top: -270px;
+            margin-left: -444px;
+            left: 50%;
+            top: 50%;
+            /* border: 1px solid black; */
+            box-shadow: 0 10px 7px 2px #ccc;
+            border-radius: 4px;
+        }
+        .login_title{
+            font-size: 30px;
+            color: #000;
+            margin: 127px 0 0 92px;;
+        }
+        .login_title img{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 3px;
+            margin-right: 10px;
+        }
+        .login_item{
+            width: 287px;
+            height: 22px;
+            margin: 64px 0 0 92px;
+            border-bottom: 1px solid #666;
+        }
+        .login_item input{
+            background: none;
+            border: none;
+            outline: none;
+            line-height: 22px;
+            height: 22px;
+            width: 80%;
+            margin-left: 10%;
+        }
+        .secondItem{
+            margin-top: 50px;
+        }
+        ::-webkit-input-placeholder{
+            font-size: 14px;
+            color: #666;
+            line-height: 22px;
+        }
+        .thirdItem{
+            width: 287px;
+            margin: 27px 0 0 92px;
+            height: 12px;
+            color: #666;
+            font-size: 12px;
+        }
+        .thirdItem span:nth-of-type(1){
+            margin-right: 142px;
+        }
+        .thirdItem input{
+            line-height: 12px;
+            height: 12px;
+            margin: 0 10px 0 0;
+            width: 12px;
+            border: 1px solid black;
+        }
+        .login{
+            /* border: none; */
+            height: 54px;
+            margin-top: 33px;
+            position: relative;
+            border: none;
+        }
+        .login button{
+            width: 210px;
+            height: 54px;
+            border-radius: 5px;
+            font-size: 24px;
+            line-height: 54px;
+            color: #fff;
+            background: #01A3E0;
+            letter-spacing: 20px;
+            text-align: center;
+            text-indent: 20px;
+            position: absolute;
+            margin-left: -105px;
+            left: 50%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login_body">
+        <p class="login_title">
+            <img src="img/logo2.png" alt="">锋舍管理系统
+        </p>
+        <div class="login_item">
+             <i class="fa fa-user"></i><input type="text" name="" id="username" placeholder="请输入用户名">
+        </div>
+        <div class="login_item secondItem">
+                <i class="fa fa-lock"></i><input type="password" name="" id="username" placeholder="请输入密码">
+        </div>
+        <div class="thirdItem">
+                <input type="checkbox"><span>记住密码</span><span>忘记密码?</span>
+        </div>
+        <div class="login_item login">
+                <button id="btn">登录</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn").onclick = function(){
+            location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

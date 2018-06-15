@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>锋宿</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="css/adminlte.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap4.min.css">
+        <!-- mod -->
+        <link rel="stylesheet" href="css/mod.css">
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- 顶部导航 -->
+        <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+            <!-- 左侧链接 -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="###" data-widget="pushmenu" class="nav-link">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="###" class="nav-link">主页</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="###" class="nav-link">联系</a>
+                </li>
+            </ul>
+            <!-- 右侧链接 -->
+            <ul class="navbar-nav ml-auto warning">
+                
+                <!--  通知下拉菜单-->
+                <li class="nav-item dropdown">
+                    <a href="#"  class="nav-link" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15条通知</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fa fa-envelope mr-2"></i> 4条新信息
+                            <span class="float-right text-muted text-sm">3分钟前</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fa fa-users mr-2"></i> 8个好友请求
+                            <span class="float-right text-muted text-sm">12小时前</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fa fa-file mr-2"></i> 8个好友请求
+                            <span class="float-right text-muted text-sm">2天前</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">查看全部通知</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="singOut" href="###">退出</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- 左侧菜单 -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- 系统界面名 -->
+            <a href="###" class="brand-link bg-primary">
+                <img src="img/logo.png" alt="AdminLTE logo" class="brand-image img-circle elevation-3">
+                <span class="brand-text font-weight-light">锋舍管理系统</span>
+            </a>
+            <!-- 侧滑导航 -->
+            <div class="sidebar">
+                <!-- 用户名 -->
+                <div class="user-panel mt-3 pb-3 d-flex">
+                    <div class="image">
+                        <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">系统管理员 1</a>
+                    </div>
+                </div>
+
+                <!-- 侧滑菜单 -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- 使用.Navi图标类添加链接图标或其他图标库 -->
+                        <!-- 一级导航 -->
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="###" class="nav-link active">
+                                <i class="nav-icon fa fa-institution"></i>
+                                <p>
+                                    校区管理
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <!-- 二级导航 -->
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="###" class="nav-link active twolevelMenu">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p class="twolevelMenu">校区管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="apartment.html" class="nav-link twolevelMenu">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p class="twolevelMenu">公寓管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="dormitory.html" class="nav-link twolevelMenu">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p class="twolevelMenu">宿舍管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="housemaster.html" class="nav-link twolevelMenu">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p class="twolevelMenu">宿管管理</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 一级导航 -->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-money"></i>
+                                <p>
+                                    费用管理
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <!-- 二级导航 -->
+                            <ul class="nav nav-treeview twolevelMenu">
+                                <li class="nav-item">
+                                    <a href="hotelExpense.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>住宿费管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item twolevelMenu">
+                                    <a href="heating.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>取暖费管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item twolevelMenu">
+                                    <a href="payHotelExpense.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>缴纳住宿费管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item twolevelMenu">
+                                    <a href="payHeating.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>缴纳取暖费管理</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 一级导航 -->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-user-circle"></i>
+                                <p>
+                                    学员管理
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <!-- 二级导航 -->
+                            <ul class="nav nav-treeview twolevelMenu">
+                                <li class="nav-item">
+                                    <a href="student.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>学员管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item twolevelMenu">
+                                    <a href="checkIn.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>入住管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item twolevelMenu">
+                                    <a href="checkOut.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>退宿管理</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item twolevelMenu">
+                                    <a href="leaveSchool.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>休学管理</p>
+                                    </a>
+                                </li>                      
+                                <li class="nav-item twolevelMenu">
+                                    <a href="moveHouse.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>迁宿管理</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 一级导航 -->
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-indent"></i>
+                                <p>
+                                    床位管理
+                                    <!-- <i class="right fa fa-angle-left"></i> -->
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- 主体 -->
+        <div class="content-wrapper">
+            <!-- 主体头部 -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 id="activeH1">
+                                <h1 id="activeH1">管理员草图</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item">
+                                    <a href="#">主页</a>
+                                </li>
+                                <li class="breadcrumb-item active">当前</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主体头部end -->
+            </section>
+
+            <!-- 表格 -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header row">
+                                <a class="col-sm-12 col-md-3">
+                                    宿舍总房间数：
+                                    <span class="color-theme-2">90</span>
+                                </a>
+                                <a class="col-sm-12 col-md-3">
+                                    总床位数：
+                                    <span>540</span>
+                                </a>
+                                <a class="col-sm-12 col-md-3">
+                                    已入住人数：
+                                    <span>300</span>
+                                </a>
+                                <a class="ccol-sm-12 col-md-3">
+                                    空床位数：
+                                    <span>240</span>
+                                </a>
+                            </div>
+                             <!-- 格内内容 -->
+                            <div class="card-body">
+                                <span class="modBtn" style="cursor: pointer;">修改校区</span>
+                                <table class="table table-bordered table-striped" id="mod">
+                                    <span class="add" style="display: none" data-toggle="modal" data-target="#myModal"> 添加</span>
+                                    <!-- <button  data-toggle="modal" data-target="#myModal">123</button> -->
+                                    <span class="deletes" style="display: none;position: absolute;right: 3%;"> 批量删除</span>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <input type="checkbox" name="" id="a1" class="selectItem selectAll"> 全选
+                                            </th>
+                                            <th>校区名称</th>
+                                            <th>校区编号</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="" id="a1" class="selectItem">
+                                            </td>
+                                            <td>北科</td>
+                                            <td>BK-001</td>
+                                            <td>
+                                                <span class="del">删除</span> /
+                                                <span class="change" data-toggle="modal" data-target="#myModal">修改</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="" id="a1" class="selectItem">
+                                            </td>
+                                            <td>北科</td>
+                                            <td>BK-001</td>
+                                            <td>
+                                                <span class="del">删除</span> /
+                                                <span class="change" data-toggle="modal" data-target="#myModal">修改</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 格内内容 -->
+                            <div class="card-body">
+                                <table id="showMsg" class="table table-bordered table-striped">
+                                    <!-- 表头 -->
+                                    <thead>
+                                        <tr>
+                                            <th>校区</th>
+                                            <th>宿舍编号</th>
+                                            <th>总床位数</th>
+                                            <th>已入住人数</th>
+                                            <th>空闲床位数</th>
+                                            <th>负责宿管</th>
+                                            <th>宿管电话</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- 表体 -->
+                                    <tbody>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>21-301</td>
+                                            <td>8</td>
+                                            <td>7</td>
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>18388775643</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>李四</td>
+                                            <td>15233667755</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>21-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>王五</td>
+                                            <td>17967558888</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>赵六</td>
+                                            <td>18199885344</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>薛七</td>
+                                            <td>16956746688</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>21-301</td>
+                                            <td>8</td>
+                                            <td>7</td>
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>18388775643</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>李四</td>
+                                            <td>15233667755</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>21-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>王五</td>
+                                            <td>17967558888</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>赵六</td>
+                                            <td>18199885344</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>薛七</td>
+                                            <td>16956746688</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>21-301</td>
+                                            <td>8</td>
+                                            <td>7</td>
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>18388775643</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>李四</td>
+                                            <td>15233667755</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>21-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>王五</td>
+                                            <td>17967558888</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>赵六</td>
+                                            <td>18199885344</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>薛七</td>
+                                            <td>16956746688</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>21-301</td>
+                                            <td>8</td>
+                                            <td>7</td>
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>18388775643</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>李四</td>
+                                            <td>15233667755</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>21-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>王五</td>
+                                            <td>17967558888</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>赵六</td>
+                                            <td>18199885344</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>薛七</td>
+                                            <td>16956746688</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>21-301</td>
+                                            <td>8</td>
+                                            <td>7</td>
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>18388775643</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BK-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>李四</td>
+                                            <td>15233667755</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>21-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>王五</td>
+                                            <td>17967558888</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>赵六</td>
+                                            <td>18199885344</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TFL-001</td>
+                                            <td>3A-101</td>
+                                            <td>3</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>薛七</td>
+                                            <td>16956746688</td>
+                                        </tr>
+                                    </tbody>
+                                    <!-- 表尾 -->
+                                    <tfoot>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- 格内内容end -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 表格end -->
+        </div>
+        <!-- 模态框-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel" style="position: absolute">
+                            添加校区
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p><span>校区名称：</span><input type="text" name="" id="schoolName" placeholder="校区名称"></p>
+                            <p><span>校区编号：</span><input type="text" name="" id="schoolNum" placeholder="校区编号"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span  class="pop" style="position: absolute;left: 20px;font-size: 14px;color: red;display: none;">请先完善信息！</span>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            提交更改
+                        </button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal -->
+        </div>
+
+        <!-- 脚本 -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.0.0-alpha
+            </div>
+            <strong>Copyright &copy; 2014-2018
+                <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- DataTables -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/adminlte.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            $("#showMsg").DataTable();
+        });
+    </script>
+</body>
+</html>
